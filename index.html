@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/fontawesome-6.3.0/css/all.min.css">
     <title>My Personal Portfolio</title>
 
 </head>
@@ -48,12 +49,12 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>                           
-                            <li><span>Web Designer</span><br>Designing Web</li>
+                            <li><span>Web Designer</span><br>Lorem ipsum dolor sit amet.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>None</span><br></li>
+                            <li><span>N/A</span><br></li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -72,19 +73,19 @@
             <div class="services-list">
                 <div>
                     <i class="fas fa-solid fa-code"></i>
-                    <h2><strong>Web Designer</strong></h2>
+                    <h2><strong>Web Developer</strong></h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque doloremque nesciunt autem maxime tenetur animi, dolorem suscipit debitis placeat quis corrupti temporibus labore eius repellendus sequi deleniti optio amet qui!</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-sharp fa-solid fa-code"></i>
-                    <h2><strong>Web Designer</strong></h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque doloremque nesciunt autem maxime tenetur animi, dolorem suscipit debitis placeat quis corrupti temporibus labore eius repellendus sequi deleniti optio amet qui!</p>
+                    <h2><strong>Lorem, ipsum.</strong></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus nihil ullam ea animi! Iste amet quo voluptas tempora aliquam.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-sharp fa-solid fa-code"></i>
-                    <h2><strong>Web Designer</strong></h2>
+                    <h2><strong>Mobile Designer</strong></h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque doloremque nesciunt autem maxime tenetur animi, dolorem suscipit debitis placeat quis corrupti temporibus labore eius repellendus sequi deleniti optio amet qui!</p>
                     <a href="#">Learn more</a>
                 </div>
@@ -116,7 +117,7 @@
                     <img src="img/work-3.png">
                     <div class="layer">
                         <h3>QR Code Generator/Scanner</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, voluptas.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, voluptas.    </p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -130,8 +131,8 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+                    <i class="fas fa-paper-plane"></i><a class="gmail" href="https://www.facebook.com/ast4roth69/" target="_blank">benjiemondia198@gmail.com</a>
+                    <p><i class="fas fa-phone-square-alt"></i>+63 963 0953 851</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/ast4roth69/" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/BenjieMondia" target="_blank"><i class="fab fa-twitter-square"></i></a>
@@ -142,9 +143,9 @@
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <input type="text" name="Name" placeholder="Your Name" autocomplete="off" required>
+                        <input type="email" name="Email" placeholder="Your Email" autocomplete="off" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" autocomplete="off" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                     <span id="msg"></span>
@@ -155,35 +156,7 @@
             <p>&copy; 2023 Benjamineke. All rights reserved.</p>
         </div>
     </div>
+
     <script src="main.js"></script>
-    <script src="https://kit.fontawesome.com/3142f33457.js" crossorigin="anonymous"></script>
-    <script>
-        var sidemenu = document.getElementById("sideMenu");
-
-        function openMenu() {
-            sidemenu.style.right = "0";
-        }
-        function closeMenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzdjdsd0EGhXRdQ0N7BILMwUmmvigWsoxE9dQVOFJ-BdEPhCVFh-XMzLNLYn4PL6APF/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById('msg')
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully!"
-                    setTimeout(function (){
-                        msg.innerHTML = ""
-                    },5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
 </body>
 </html>
