@@ -296,14 +296,15 @@ nav ul li a:hover::after {
   flex-basis: 60%;
 }
 
-.contact-left p {
-  margin-top: 30px;
+.contact-left i {
+  color: #ff004f;
+  margin: 30px 15px 0 0;
+  font-size: 25px;
 }
 
-.contact-left p i {
-  color: #ff004f;
-  margin-right: 15px;
-  font-size: 25px;
+.contact-left .gmail {
+    color: #0062ff;
+    text-decoration: none;
 }
 
 .social-icons {
